@@ -5,5 +5,8 @@ public class CommonsPage {
 	//search
 	//addtocart
 	
+	public void commom() {
+		
+	}
 
 }
