@@ -26,6 +26,12 @@ pipeline {
             }
         }
         
+        stage('Regression Test') {
+            steps {
+                echo 'Regression Test'
+            }
+        }
+        
         stage('Deploy on Stage') {
             steps {
                 echo 'Stage Deploy'
