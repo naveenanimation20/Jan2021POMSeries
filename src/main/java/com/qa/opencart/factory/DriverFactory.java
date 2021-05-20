@@ -83,7 +83,6 @@ public class DriverFactory {
 		String env = System.getProperty("env");
 		if(env == null) {
 			System.out.println("Running on Environment : --> on PROD");
-
 			try {
 				ip = new FileInputStream("./src/test/resources/config/config.properties");
 			} catch (FileNotFoundException e) {
