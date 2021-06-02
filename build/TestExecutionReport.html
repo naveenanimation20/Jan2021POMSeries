@@ -34,7 +34,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -48,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Apr 20, 2021 07:24:41 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Jun 2, 2021 07:02:53 AM</span>
 				</a>
 			</li>
 			<li>
@@ -74,7 +73,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -89,6 +87,8 @@
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>DemoCartAppTestautomtionregressionsuite</a></li>
 					<li><a href='#'>LoginPageTest</a></li>
+					<li><a href='#'>AccountsPageTest</a></li>
+					<li><a href='#'>ProductInfoTest</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -136,10 +136,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>6</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>15</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -151,10 +151,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>6</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>15</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -171,15 +171,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>loginNegativeTest</span>
-						<span class='test-time'>Apr 20, 2021 07:24:45 AM</span>
+						<span class='test-name'>loginPageTitleTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:01 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 20, 2021 07:24:45 AM</span>
-	<span class='label end-time'>Apr 20, 2021 07:24:51 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+480ms</span>
+	<span class='label start-time'>Jun 2, 2021 07:03:01 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:01 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+94ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -199,7 +199,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:24:51 AM</td>
+					<td class='timestamp'>7:03:01 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -211,15 +211,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>loginNegativeTest</span>
-						<span class='test-time'>Apr 20, 2021 07:24:51 AM</span>
+						<span class='test-name'>loginPageUrlTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:01 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 20, 2021 07:24:51 AM</span>
-	<span class='label end-time'>Apr 20, 2021 07:24:56 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+269ms</span>
+	<span class='label start-time'>Jun 2, 2021 07:03:01 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:01 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+13ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -239,7 +239,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:24:56 AM</td>
+					<td class='timestamp'>7:03:01 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -251,15 +251,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>loginNegativeTest</span>
-						<span class='test-time'>Apr 20, 2021 07:24:56 AM</span>
+						<span class='test-name'>forgotPwdLinkTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:01 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 20, 2021 07:24:56 AM</span>
-	<span class='label end-time'>Apr 20, 2021 07:25:01 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+263ms</span>
+	<span class='label start-time'>Jun 2, 2021 07:03:01 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:02 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+85ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -279,7 +279,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:25:01 AM</td>
+					<td class='timestamp'>7:03:02 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -289,17 +289,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>loginPageTitleTest</span>
-						<span class='test-time'>Apr 20, 2021 07:25:01 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>loginTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:02 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 20, 2021 07:25:01 AM</span>
-	<span class='label end-time'>Apr 20, 2021 07:25:06 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+114ms</span>
+	<span class='label start-time'>Jun 2, 2021 07:03:02 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:08 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+714ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -317,41 +317,10 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>7:25:08 AM</td>
-					<td class='step-details'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "Account Login11". Current title: "Account Login" (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'naveenautomationlabss-MacBook-Pro.local', ip: 'fe80:0:0:0:6c:58ef:121d:71bc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.72, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/_s/grkxq_lj10v...}, goog:chromeOptions: {debuggerAddress: localhost:54171}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.opencart.utils.ElementUtil.waitForTitle(ElementUtil.java:170)
-	at com.qa.opencart.pages.LoginPage.getLoginPageTitle(LoginPage.java:34)
-	at com.qa.opencart.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre><img data-featherlight='/Users/naveenautomationlabs/Documents/workspace/Jan2021POMSeries/screenshots/1618883708105.png' width='10%' src='/Users/naveenautomationlabs/Documents/workspace/Jan2021POMSeries/screenshots/1618883708105.png' data-src='/Users/naveenautomationlabs/Documents/workspace/Jan2021POMSeries/screenshots/1618883708105.png'></td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:03:08 AM</td>
+					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
 		</table>
@@ -362,15 +331,15 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>loginPageUrlTest</span>
-						<span class='test-time'>Apr 20, 2021 07:25:08 AM</span>
+						<span class='test-name'>loginPageTitleTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:03 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 20, 2021 07:25:08 AM</span>
-	<span class='label end-time'>Apr 20, 2021 07:25:08 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+23ms</span>
+	<span class='label start-time'>Jun 2, 2021 07:03:03 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:03 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+22ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -390,7 +359,7 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:25:08 AM</td>
+					<td class='timestamp'>7:03:03 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -402,15 +371,15 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>forgotPwdLinkTest</span>
-						<span class='test-time'>Apr 20, 2021 07:25:08 AM</span>
+						<span class='test-name'>loginPageUrlTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:03 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 20, 2021 07:25:08 AM</span>
-	<span class='label end-time'>Apr 20, 2021 07:25:09 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+930ms</span>
+	<span class='label start-time'>Jun 2, 2021 07:03:03 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:03 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+11ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -430,7 +399,7 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:25:09 AM</td>
+					<td class='timestamp'>7:03:03 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -442,15 +411,15 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
 					<div class='test-heading'>
-						<span class='test-name'>loginTest</span>
-						<span class='test-time'>Apr 20, 2021 07:25:09 AM</span>
+						<span class='test-name'>forgotPwdLinkTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:03 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 20, 2021 07:25:09 AM</span>
-	<span class='label end-time'>Apr 20, 2021 07:25:14 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+256ms</span>
+	<span class='label start-time'>Jun 2, 2021 07:03:03 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:04 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+50ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -470,7 +439,327 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:25:14 AM</td>
+					<td class='timestamp'>7:03:04 AM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>loginTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:04 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 2, 2021 07:03:04 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:09 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+270ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>DemoCartAppTestautomtionregressionsuite</span>
+				<span class='category label white-text'>LoginPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:03:09 AM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>accPageHeaderTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:07 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 2, 2021 07:03:07 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:08 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+958ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>DemoCartAppTestautomtionregressionsuite</span>
+				<span class='category label white-text'>AccountsPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:03:08 AM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>accPageTitleTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:08 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 2, 2021 07:03:08 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:08 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+15ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>DemoCartAppTestautomtionregressionsuite</span>
+				<span class='category label white-text'>AccountsPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:03:08 AM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>accSectionsListTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:08 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 2, 2021 07:03:08 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:08 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+204ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>DemoCartAppTestautomtionregressionsuite</span>
+				<span class='category label white-text'>AccountsPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:03:09 AM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>logoutLinkTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:09 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 2, 2021 07:03:09 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:10 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+151ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>DemoCartAppTestautomtionregressionsuite</span>
+				<span class='category label white-text'>AccountsPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:03:10 AM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>productCountTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:19 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 2, 2021 07:03:19 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+802ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>DemoCartAppTestautomtionregressionsuite</span>
+				<span class='category label white-text'>ProductInfoTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:03:23 AM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>productCountTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:23 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 2, 2021 07:03:23 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:27 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+949ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>DemoCartAppTestautomtionregressionsuite</span>
+				<span class='category label white-text'>ProductInfoTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:03:27 AM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>productCountTest</span>
+						<span class='test-time'>Jun 2, 2021 07:03:27 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 2, 2021 07:03:27 AM</span>
+	<span class='label end-time'>Jun 2, 2021 07:03:31 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+813ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>DemoCartAppTestautomtionregressionsuite</span>
+				<span class='category label white-text'>ProductInfoTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:03:31 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -532,14 +821,13 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 					<div class='category-heading'>
 						<span class='category-name'>DemoCartAppTestautomtionregressionsuite</span>
 						<span class='category-status right'>
-							<span class='label pass'>6</span>
-							<span class='label fail'>1</span>
+							<span class='label pass'>15</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 6</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 15</span>
+							
 							
 						</div>
 					
@@ -554,38 +842,78 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 20, 2021 07:24:45 AM</td>
-										<td class='linked' test-id='1'>loginNegativeTest</td>
+										<td>Jun 2, 2021 07:03:01 AM</td>
+										<td class='linked' test-id='1'>loginPageTitleTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 20, 2021 07:24:51 AM</td>
-										<td class='linked' test-id='2'>loginNegativeTest</td>
+										<td>Jun 2, 2021 07:03:01 AM</td>
+										<td class='linked' test-id='2'>loginPageUrlTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 20, 2021 07:24:56 AM</td>
-										<td class='linked' test-id='3'>loginNegativeTest</td>
+										<td>Jun 2, 2021 07:03:01 AM</td>
+										<td class='linked' test-id='3'>forgotPwdLinkTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 20, 2021 07:25:01 AM</td>
-										<td class='linked' test-id='4'>loginPageTitleTest</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Apr 20, 2021 07:25:08 AM</td>
-										<td class='linked' test-id='5'>loginPageUrlTest</td>
+										<td>Jun 2, 2021 07:03:02 AM</td>
+										<td class='linked' test-id='4'>loginTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 20, 2021 07:25:08 AM</td>
-										<td class='linked' test-id='6'>forgotPwdLinkTest</td>
+										<td>Jun 2, 2021 07:03:03 AM</td>
+										<td class='linked' test-id='5'>loginPageTitleTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 20, 2021 07:25:09 AM</td>
-										<td class='linked' test-id='7'>loginTest</td>
+										<td>Jun 2, 2021 07:03:03 AM</td>
+										<td class='linked' test-id='6'>loginPageUrlTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:03 AM</td>
+										<td class='linked' test-id='7'>forgotPwdLinkTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:04 AM</td>
+										<td class='linked' test-id='8'>loginTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:07 AM</td>
+										<td class='linked' test-id='9'>accPageHeaderTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:08 AM</td>
+										<td class='linked' test-id='10'>accPageTitleTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:08 AM</td>
+										<td class='linked' test-id='11'>accSectionsListTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:09 AM</td>
+										<td class='linked' test-id='12'>logoutLinkTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:19 AM</td>
+										<td class='linked' test-id='13'>productCountTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:23 AM</td>
+										<td class='linked' test-id='14'>productCountTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:27 AM</td>
+										<td class='linked' test-id='15'>productCountTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -597,14 +925,13 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 					<div class='category-heading'>
 						<span class='category-name'>LoginPageTest</span>
 						<span class='category-status right'>
-							<span class='label pass'>6</span>
-							<span class='label fail'>1</span>
+							<span class='label pass'>8</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 6</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 8</span>
+							
 							
 						</div>
 					
@@ -619,38 +946,136 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 20, 2021 07:24:45 AM</td>
-										<td class='linked' test-id='1'>loginNegativeTest</td>
+										<td>Jun 2, 2021 07:03:01 AM</td>
+										<td class='linked' test-id='1'>loginPageTitleTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 20, 2021 07:24:51 AM</td>
-										<td class='linked' test-id='2'>loginNegativeTest</td>
+										<td>Jun 2, 2021 07:03:01 AM</td>
+										<td class='linked' test-id='2'>loginPageUrlTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 20, 2021 07:24:56 AM</td>
-										<td class='linked' test-id='3'>loginNegativeTest</td>
+										<td>Jun 2, 2021 07:03:01 AM</td>
+										<td class='linked' test-id='3'>forgotPwdLinkTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 20, 2021 07:25:01 AM</td>
-										<td class='linked' test-id='4'>loginPageTitleTest</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Apr 20, 2021 07:25:08 AM</td>
-										<td class='linked' test-id='5'>loginPageUrlTest</td>
+										<td>Jun 2, 2021 07:03:02 AM</td>
+										<td class='linked' test-id='4'>loginTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 20, 2021 07:25:08 AM</td>
-										<td class='linked' test-id='6'>forgotPwdLinkTest</td>
+										<td>Jun 2, 2021 07:03:03 AM</td>
+										<td class='linked' test-id='5'>loginPageTitleTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 20, 2021 07:25:09 AM</td>
-										<td class='linked' test-id='7'>loginTest</td>
+										<td>Jun 2, 2021 07:03:03 AM</td>
+										<td class='linked' test-id='6'>loginPageUrlTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:03 AM</td>
+										<td class='linked' test-id='7'>forgotPwdLinkTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:04 AM</td>
+										<td class='linked' test-id='8'>loginTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>AccountsPageTest</span>
+						<span class='category-status right'>
+							<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2021 07:03:07 AM</td>
+										<td class='linked' test-id='9'>accPageHeaderTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:08 AM</td>
+										<td class='linked' test-id='10'>accPageTitleTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:08 AM</td>
+										<td class='linked' test-id='11'>accSectionsListTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:09 AM</td>
+										<td class='linked' test-id='12'>logoutLinkTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>ProductInfoTest</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2021 07:03:19 AM</td>
+										<td class='linked' test-id='13'>productCountTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:23 AM</td>
+										<td class='linked' test-id='14'>productCountTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2021 07:03:27 AM</td>
+										<td class='linked' test-id='15'>productCountTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -670,98 +1095,6 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.TimeoutException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Apr 20, 2021 07:25:01 AM</td>
-                                                        <td class='linked' test-id='4'>loginPageTitleTest</td>
-                                                        <td><pre><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "Account Login11". Current title: "Account Login" (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'naveenautomationlabss-MacBook-Pro.local', ip: 'fe80:0:0:0:6c:58ef:121d:71bc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.72, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/_s/grkxq_lj10v...}, goog:chromeOptions: {debuggerAddress: localhost:54171}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.opencart.utils.ElementUtil.waitForTitle(ElementUtil.java:170)
-	at com.qa.opencart.pages.LoginPage.getLoginPageTitle(LoginPage.java:34)
-	at com.qa.opencart.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -771,31 +1104,31 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>15</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>15</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 20, 2021 07:24:41 AM</div>
+					<div class='panel-lead'>Jun 2, 2021 07:02:53 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 20, 2021 07:25:15 AM</div>
+			 		<div class='panel-lead'>Jun 2, 2021 07:03:31 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 33s+884ms</div>
+					<div class='panel-lead'>0h 0m 38s+413ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -812,20 +1145,38 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 						</tr>
 						<tr>
 							<td>DemoCartAppTestautomtionregressionsuite</td>
-							<td>6</td>
-							<td>1</td>
+							<td>15</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
-									85.714%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>LoginPageTest</td>
-							<td>6</td>
-							<td>1</td>
+							<td>8</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
-									85.714%
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>AccountsPageTest</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>ProductInfoTest</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
 							</td>
 						</tr>
 					</table>
@@ -841,22 +1192,22 @@ Session ID: 6f7e2800aae5929e6e3f8bef54edcbd5
 
 		<script>
 			var statusGroup = {
-				passParent: 6,
-				failParent: 1,
+				passParent: 15,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 6,
-				failChild: 1,
+				passChild: 15,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

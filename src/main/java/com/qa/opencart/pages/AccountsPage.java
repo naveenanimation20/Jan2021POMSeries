@@ -7,6 +7,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import com.qa.opencart.utils.Constants;
 import com.qa.opencart.utils.ElementUtil;
@@ -57,6 +58,7 @@ public class AccountsPage {
 	
 	//search method:
 	public SearchResultPage doSearch(String productName){
+	
 		System.out.println("searching the product: " + productName);
 		elementUtil.doSendKeys(searchField, productName);
 		elementUtil.doClick(searchButton);

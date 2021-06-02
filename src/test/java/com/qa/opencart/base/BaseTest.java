@@ -29,13 +29,13 @@ public class BaseTest {
 	public ProductInfoPage productInfoPage;
 	public RegistrationPage registrationPage;
 
-	@Parameters({"browser"})
+	@Parameters({"browser", "browserversion"})
 	@BeforeTest
-	public void setUp(String browserName) {
+	public void setUp(String browserName, String browserVersion) {
 		df = new DriverFactory();
 		prop = df.init_prop();
 		prop.setProperty("browser", browserName);
-		driver = df.init_driver(prop);
+		driver = df.init_driver(browserName, browserVersion);
 		loginPage = new LoginPage(driver);
 	}
 
