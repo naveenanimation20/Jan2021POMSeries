@@ -1,3 +1,5 @@
+package com.qa.opencart.pages;
+
 public class DealsPage{
   
  String page = "Deals";
