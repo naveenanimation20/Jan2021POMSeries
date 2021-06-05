@@ -31,7 +31,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class DriverFactory {
 	private static final Logger LOGGER = Logger.getLogger(String.valueOf(DriverFactory.class));
 
-
 	WebDriver driver;
 	Properties prop;
 	private OptionsManager optionsManager;
@@ -50,12 +49,12 @@ public class DriverFactory {
 		highlight = prop.getProperty("highlight");
 		optionsManager = new OptionsManager(prop);
 
-		//String browserName = prop.getProperty("browser").trim();
+		// String browserName = prop.getProperty("browser").trim();
 		System.out.println("browser name is : " + browserName);
 		LOGGER.info("browser name is : " + browserName);
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			//System.setProperty("webdriver.chrome.verboseLogging", "true");
+			// System.setProperty("webdriver.chrome.verboseLogging", "true");
 			WebDriverManager.chromedriver().setup();
 
 			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
@@ -102,26 +101,31 @@ public class DriverFactory {
 //			cap.setCapability("enableVNC", true);
 //			cap.setCapability("enableVideo", true);
 //			cap.setCapability(ChromeOptions.CAPABILITY, optionsManager.getChromeOptions());
-			
+
 			ChromeOptions co = optionsManager.getChromeOptions();
 			co.setCapability("browserName", browserName);
 			co.setCapability("browserVersion", browserVersion);
 			co.setCapability("enableVNC", true);
-			
+
 			try {
 				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), co));
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}
 		} else if (browserName.equals("firefox")) {
-			DesiredCapabilities cap = DesiredCapabilities.firefox();
-			cap.setCapability("browserName", browserName);
-			cap.setCapability("browserVersion", browserVersion);
-			cap.setCapability("enableVNC", true);
+//			DesiredCapabilities cap = DesiredCapabilities.firefox();
+//			cap.setCapability("browserName", browserName);
+//			cap.setCapability("browserVersion", browserVersion);
+//			cap.setCapability("enableVNC", true);
+//			cap.setCapability(FirefoxOptions.FIREFOX_OPTIONS, optionsManager.getFirefoxOptions());
 
-			cap.setCapability(FirefoxOptions.FIREFOX_OPTIONS, optionsManager.getFirefoxOptions());
+			FirefoxOptions fo = optionsManager.getFirefoxOptions();
+			fo.setCapability("browserName", browserName);
+			fo.setCapability("browserVersion", browserVersion);
+			fo.setCapability("enableVNC", true);
+
 			try {
-				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), cap));
+				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), fo));
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}
