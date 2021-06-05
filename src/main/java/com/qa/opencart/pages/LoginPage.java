@@ -1,14 +1,17 @@
 package com.qa.opencart.pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.qa.opencart.factory.DriverFactory;
 import com.qa.opencart.utils.Constants;
 import com.qa.opencart.utils.ElementUtil;
 
 import io.qameta.allure.Step;
 
 public class LoginPage {
+	private static final Logger LOGGER = Logger.getLogger(String.valueOf(LoginPage.class));
 
 	private WebDriver driver;
 	private ElementUtil elementUtil;

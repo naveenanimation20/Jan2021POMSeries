@@ -9,6 +9,7 @@ import java.net.URL;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -28,6 +29,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  *
  */
 public class DriverFactory {
+	private static final Logger LOGGER = Logger.getLogger(String.valueOf(DriverFactory.class));
+
 
 	WebDriver driver;
 	Properties prop;
@@ -49,14 +52,17 @@ public class DriverFactory {
 
 		//String browserName = prop.getProperty("browser").trim();
 		System.out.println("browser name is : " + browserName);
+		LOGGER.info("browser name is : " + browserName);
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.verboseLogging", "true");
+			//System.setProperty("webdriver.chrome.verboseLogging", "true");
 			WebDriverManager.chromedriver().setup();
 
 			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
+				LOGGER.info("remote is true..running it on GRID......");
 				init_remoteDriver(browserName, browserVersion);
 			} else {
+				LOGGER.info("remote is false..running it on local.....");
 				tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
 			}
 
@@ -95,8 +101,6 @@ public class DriverFactory {
 			cap.setCapability("browserVersion", browserVersion);
 			cap.setCapability("enableVNC", true);
 			cap.setCapability("enableVideo", true);
-
-
 			cap.setCapability(ChromeOptions.CAPABILITY, optionsManager.getChromeOptions());
 			try {
 				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), cap));

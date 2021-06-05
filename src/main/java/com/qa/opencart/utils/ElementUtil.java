@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
@@ -21,8 +22,10 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.opencart.factory.DriverFactory;
+import com.qa.opencart.pages.LoginPage;
 
 public class ElementUtil {
+	private static final Logger LOGGER = Logger.getLogger(String.valueOf(ElementUtil.class));
 
 	private WebDriver driver;
 	private JavaScriptUtil jsUtil;
@@ -33,10 +36,12 @@ public class ElementUtil {
 	}
 
 	public WebElement getElement(By locator) {
+		LOGGER.info("locator is: " + locator);
 		WebElement element = driver.findElement(locator);
 		if (Boolean.parseBoolean(DriverFactory.highlight)) {
 			jsUtil.flash(element);
 		}
+		LOGGER.info("Element is: " + element);
 		return element;
 	}
 
