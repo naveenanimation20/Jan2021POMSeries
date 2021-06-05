@@ -96,14 +96,20 @@ public class DriverFactory {
 		System.out.println("Running test on remote grid server: " + browserName);
 
 		if (browserName.equals("chrome")) {
-			DesiredCapabilities cap = DesiredCapabilities.chrome();
-			cap.setCapability("browserName", browserName);
-			cap.setCapability("browserVersion", browserVersion);
-			cap.setCapability("enableVNC", true);
-			cap.setCapability("enableVideo", true);
-			cap.setCapability(ChromeOptions.CAPABILITY, optionsManager.getChromeOptions());
+//			DesiredCapabilities cap = DesiredCapabilities.chrome();
+//			cap.setCapability("browserName", browserName);
+//			cap.setCapability("browserVersion", browserVersion);
+//			cap.setCapability("enableVNC", true);
+//			cap.setCapability("enableVideo", true);
+//			cap.setCapability(ChromeOptions.CAPABILITY, optionsManager.getChromeOptions());
+			
+			ChromeOptions co = optionsManager.getChromeOptions();
+			co.setCapability("browserName", browserName);
+			co.setCapability("browserVersion", browserVersion);
+			co.setCapability("enableVNC", true);
+			
 			try {
-				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), cap));
+				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), co));
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}
@@ -112,7 +118,6 @@ public class DriverFactory {
 			cap.setCapability("browserName", browserName);
 			cap.setCapability("browserVersion", browserVersion);
 			cap.setCapability("enableVNC", true);
-			cap.setCapability("enableVideo", true);
 
 			cap.setCapability(FirefoxOptions.FIREFOX_OPTIONS, optionsManager.getFirefoxOptions());
 			try {
