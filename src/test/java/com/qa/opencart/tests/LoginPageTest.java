@@ -53,7 +53,8 @@ public class LoginPageTest extends BaseTest {
 		return new Object[][]  {
 							{"test@gmail.com", "test@123"},
 							{" " , "test@123"},
-							{" ", " "}
+							{" ", " "},
+							{"abbccc", "abccc"}
 									};
 	}
 	
