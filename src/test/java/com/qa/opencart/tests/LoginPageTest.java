@@ -47,27 +47,16 @@ public class LoginPageTest extends BaseTest {
 	public void loginTest() {
 		loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
-	
+
 	@DataProvider
 	public Object[][] loginNegativeData() {
-		return new Object[][]  {
-							{"test@gmail.com", "test@123"},
-							{" " , "test@123"},
-							{" ", " "},
-							{"abbccc", "abccc"}
-									};
+		return new Object[][] { { "test@gmail.com", "test@123" }, { " ", "test@123" }, { " ", " " },
+				{ "abbccc", "abccc" } };
 	}
-	
+
 	@Test(priority = 0, dataProvider = "loginNegativeData", enabled = false)
 	public void loginNegativeTest(String un, String pwd) {
 		loginPage.doLoginWrongData(un, pwd);
 	}
-	
-	
-	
-	
-	
-	
-	
 
 }
